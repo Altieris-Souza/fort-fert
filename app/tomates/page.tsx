@@ -21,7 +21,7 @@ export default function TomatesPage() {
 
 function HeroSection() {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-green-900 via-emerald-900 to-green-950 overflow-hidden">
+    <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-green-900 via-emerald-900 to-green-950 overflow-hidden pt-20">
       <div className="absolute inset-0">
         <Image
           src="/images/tomates/WhatsApp Image 2025-12-15 at 10.17.12.jpeg"

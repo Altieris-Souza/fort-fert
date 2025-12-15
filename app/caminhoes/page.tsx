@@ -19,7 +19,7 @@ export default function CaminhoesPage() {
 
 function HeroSection() {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-zinc-900 via-black to-zinc-900 overflow-hidden">
+    <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-zinc-900 via-black to-zinc-900 overflow-hidden pt-20">
       <div className="absolute inset-0">
         <Image
           src="/images/caminhoes/WhatsApp Image 2025-12-15 at 10.12.35.jpeg"

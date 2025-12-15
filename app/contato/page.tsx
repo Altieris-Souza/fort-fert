@@ -15,7 +15,7 @@ export default function ContatoPage() {
 
 function HeroSection() {
   return (
-    <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-yellow-600 via-yellow-500 to-yellow-600 overflow-hidden">
+    <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-yellow-600 via-yellow-500 to-yellow-600 overflow-hidden pt-20">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.1),transparent_70%)]" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">
