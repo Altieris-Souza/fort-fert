@@ -16,7 +16,7 @@ export default function Header() {
     { href: '/contato', label: 'Contato' },
   ];
 
-  const whatsappUrl = "https://wa.me/5543986944691?text=Olá!%20Gostaria%20de%20mais%20informações.";
+  const whatsappUrl = "https://wa.me/5543998694691?text=Olá!%20Gostaria%20de%20mais%20informações.";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-zinc-200">

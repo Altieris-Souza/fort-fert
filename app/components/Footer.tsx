@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { MessageCircle, Instagram } from 'lucide-react';
 
 export default function Footer() {
-  const whatsappUrl = "https://wa.me/5543986944691?text=Olá!%20Gostaria%20de%20mais%20informações.";
+  const whatsappUrl = "https://wa.me/5543998694691?text=Olá!%20Gostaria%20de%20mais%20informações.";
 
   const navLinks = [
     { href: '/', label: 'Início' },

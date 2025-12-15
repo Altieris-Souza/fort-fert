@@ -18,7 +18,7 @@ export default function Home() {
 
 function HeroSection() {
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center bg-gradient-to-br from-black via-zinc-900 to-black overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-zinc-900 to-black overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(234,179,8,0.15),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(234,179,8,0.1),transparent_50%)]" />
       

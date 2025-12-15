@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 export default function FloatingWhatsApp() {
-  const phoneNumber = '5543986944691';
+  const phoneNumber = '5543998694691';
   const message = 'Olá! Gostaria de saber mais sobre os serviços da Fort Fert.';
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
