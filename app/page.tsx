@@ -66,10 +66,11 @@ function ServicesSection() {
     {
       icon: Truck,
       title: 'Serviços de Caminhão',
-      description: 'Caminhão-pipa, esterco de qualidade e limpeza de fossas. Atendimento rural e urbano com equipamentos modernos.',
-      features: ['Caminhão-Pipa', 'Esterco Curtido', 'Limpeza de Fossas'],
+      description: 'Caminhão-pipa e esterco de qualidade. Atendimento rural e urbano com equipamentos modernos.',
+      features: ['Caminhão-Pipa', 'Esterco Curtido'],
       href: '/caminhoes',
-      gradient: 'from-blue-500/10 to-cyan-500/10'
+      gradient: 'from-blue-500/10 to-cyan-500/10',
+      image: '/images/caminhoes/WhatsApp Image 2025-12-15 at 10.22.49.jpeg'
     },
     {
       icon: Leaf,
@@ -77,7 +78,8 @@ function ServicesSection() {
       description: 'Produção própria em estufas controladas. Tomates frescos e saborosos, disponíveis em atacado e varejo.',
       features: ['Produção Própria', 'Colheita Diária', 'Atacado e Varejo'],
       href: '/tomates',
-      gradient: 'from-green-500/10 to-emerald-500/10'
+      gradient: 'from-green-500/10 to-emerald-500/10',
+      image: '/images/tomates/WhatsApp Image 2025-12-15 at 10.22.33.jpeg'
     },
   ];
 
@@ -114,7 +116,7 @@ function ServicesSection() {
                   
                   <div className="relative h-64 bg-zinc-200 overflow-hidden">
                     <Image
-                      src={index === 0 ? "/images/caminhoes/WhatsApp Image 2025-12-15 at 10.22.49.jpeg" : "/images/tomates/WhatsApp Image 2025-12-15 at 10.22.33.jpeg"}
+                      src={service.image}
                       alt={service.title}
                       fill
                       className="object-cover"

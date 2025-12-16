@@ -86,74 +86,74 @@ function ServicesSection() {
         "Entrega em propriedades rurais",
         "Produto 100% orgânico"
       ]
-    },
-    {
-      icon: Truck,
-      title: "Limpeza de Fossas",
-      description: "Limpeza e retirada especializada de fossas sépticas com descarte correto.",
-      features: [
-        "Equipamento especializado e moderno",
-        "Atendimento residencial e comercial",
-        "Descarte ambientalmente correto",
-        "Profissionais qualificados",
-        "Serviço rápido e limpo",
-        "Manutenção preventiva"
-      ]
     }
   ];
 
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        <SectionTitle subtitle="Três serviços essenciais, um padrão de excelência">
+        <SectionTitle subtitle="Dois serviços essenciais, um padrão de excelência">
           Nossos Serviços
         </SectionTitle>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:shadow-xl hover:shadow-yellow-500/10 transition-all duration-300"
-            >
-              <div className="relative h-48 bg-zinc-200 overflow-hidden">
-                <Image
-                  src={index === 0 ? "/images/caminhoes/WhatsApp Image 2025-12-15 at 10.28.07.jpeg" : index === 1 ? "/images/caminhoes/WhatsApp Image 2025-12-15 at 10.28.09.jpeg" : "/images/caminhoes/WhatsApp Image 2025-12-15 at 10.50.58.jpeg"}
-                  alt={service.title}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-              </div>
-              
-              <div className="p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <service.icon className="w-6 h-6 text-black" />
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          {/* Coluna da Esquerda - Lista de Serviços */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="space-y-12"
+          >
+            {services.map((service, index) => (
+              <div key={index} className="space-y-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-14 h-14 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <service.icon className="w-7 h-7 text-black" />
                   </div>
-                <h3 className="text-2xl font-bold text-black">
-                  {service.title}
-                </h3>
-              </div>
+                  <h3 className="text-3xl font-bold text-black">
+                    {service.title}
+                  </h3>
+                </div>
+                
+                <p className="text-zinc-600 text-lg leading-relaxed">
+                  {service.description}
+                </p>
 
-              <p className="text-zinc-600 mb-6 leading-relaxed">
-                {service.description}
-              </p>
-
-              <ul className="space-y-3">
-                {service.features.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-zinc-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
+                <ul className="space-y-2">
+                  {service.features.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-zinc-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            </motion.div>
-          ))}
+            ))}
+          </motion.div>
+
+          {/* Coluna da Direita - Imagem do Caminhão */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="sticky top-24"
+          >
+            <div className="relative h-[700px] rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/caminhoes/WhatsApp Image 2025-12-15 at 10.22.49.jpeg"
+                alt="Caminhão de serviço"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-8">
+                <h4 className="text-white text-2xl font-bold mb-2">Equipamentos Modernos</h4>
+                <p className="text-zinc-200">Frota preparada para atender suas necessidades</p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
