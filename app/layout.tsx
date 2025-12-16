@@ -16,8 +16,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fort Fert - Serviços de Caminhão e Estufas de Tomate",
-  description: "Serviços especializados de caminhão-pipa, esterco e limpeza de fossas. Produção e venda de tomates de estufa. Atendimento rural e urbano.",
+  title: "Fort Fert",
+  description: "Serviços de caminhão-pipa e transporte de esterco. Produção própria de tomates em estufas. Atendimento rural e urbano com qualidade e compromisso.",
+  icons: {
+    icon: '/images/favicon.ico',
+  },
+  openGraph: {
+    title: 'Fort Fert - Serviços de Caminhão e Estufas de Tomate',
+    description: 'Serviços de caminhão-pipa e transporte de esterco. Produção própria de tomates em estufas. Atendimento rural e urbano.',
+    images: ['/images/logo.png'],
+  },
 };
 
 export default function RootLayout({

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { MessageCircle, Instagram } from 'lucide-react';
+import { MessageCircle, Instagram, Mail, Facebook } from 'lucide-react';
 
 export default function Footer() {
   const whatsappUrl = "https://wa.me/5543998694691?text=Olá!%20Gostaria%20de%20mais%20informações.";
@@ -67,6 +67,17 @@ export default function Footer() {
               >
                 <Instagram className="w-5 h-5" />
                 <span>@a1fortfert</span>
+              </a>
+              <div className="flex items-center gap-2 text-zinc-400 hover:text-blue-500 transition-colors cursor-pointer">
+                <Facebook className="w-5 h-5" />
+                <span>Fort Fert</span>
+              </div>
+              <a
+                href="mailto:contato@fortfert.com.br"
+                className="flex items-center gap-2 text-zinc-400 hover:text-yellow-500 transition-colors"
+              >
+                <Mail className="w-5 h-5" />
+                <span>contato@fortfert.com.br</span>
               </a>
             </div>
             <p className="text-zinc-400 mt-4 text-sm">

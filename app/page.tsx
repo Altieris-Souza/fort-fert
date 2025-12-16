@@ -11,6 +11,7 @@ export default function Home() {
     <div className="min-h-screen bg-zinc-50">
       <HeroSection />
       <ServicesSection />
+      <HistorySection />
       <TrustSection />
     </div>
   );
@@ -155,6 +156,77 @@ function ServicesSection() {
               </Link>
             </motion.div>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HistorySection() {
+  return (
+    <section className="py-20 px-6 bg-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          {/* Coluna da Esquerda - Imagem */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative"
+          >
+            <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/logo.png"
+                alt="Fort Fert - Nossa História"
+                fill
+                className="object-contain p-12 bg-gradient-to-br from-yellow-50 to-white"
+              />
+            </div>
+          </motion.div>
+
+          {/* Coluna da Direita - Texto */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="space-y-6"
+          >
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+                Nossa História
+              </h2>
+              <div className="h-1 w-20 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full" />
+            </div>
+
+            <p className="text-lg text-zinc-700 leading-relaxed">
+              A <span className="font-bold text-black">Fort Fert</span> nasceu do sonho de uma família empreendedora 
+              que viu na agricultura familiar uma oportunidade de cultivar qualidade e tradição.
+            </p>
+
+            <p className="text-lg text-zinc-700 leading-relaxed">
+              Iniciamos nossa jornada com a produção de tomates em estufas modernas, 
+              trazendo produtos frescos e de qualidade direto do campo. 
+              Com o crescimento e a confiança conquistada, expandimos nossos serviços para 
+              atender outras necessidades da zona rural, oferecendo caminhão-pipa e transporte de esterco 
+              com a mesma dedicação e compromisso.
+            </p>
+
+            <p className="text-lg text-zinc-700 leading-relaxed">
+              Hoje, somos uma empresa familiar que une tradição e inovação, 
+              sempre priorizando o atendimento personalizado e a satisfação de cada cliente. 
+              Nossa missão é continuar crescendo, mantendo os valores que nos trouxeram até aqui: 
+              <span className="font-bold text-yellow-600"> honestidade, qualidade e compromisso</span>.
+            </p>
+
+            <div className="pt-4">
+              <WhatsAppButton 
+                text="Conheça Mais"
+                message="Olá! Gostaria de conhecer mais sobre a história da Fort Fert."
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
