@@ -95,7 +95,7 @@ function ServicesSection() {
             Nossos Serviços
           </h2>
           <p className="text-lg md:text-xl text-zinc-600 max-w-2xl mx-auto">
-            Duas frentes de trabalho, um mesmo compromisso com excelência
+            Frentes de trabalho, um mesmo compromisso com excelência
           </p>
         </motion.div>
 
