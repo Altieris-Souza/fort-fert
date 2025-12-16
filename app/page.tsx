@@ -175,12 +175,12 @@ function HistorySection() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative h-[500px]">
               <Image
                 src="/images/logo.png"
                 alt="Fort Fert - Nossa História"
                 fill
-                className="object-contain p-12 bg-gradient-to-br from-yellow-50 to-white"
+                className="object-contain"
               />
             </div>
           </motion.div>
