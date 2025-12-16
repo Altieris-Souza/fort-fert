@@ -64,27 +64,23 @@ function ServicesSection() {
     {
       icon: Droplet,
       title: "Caminhão-Pipa",
-      description: "Fornecimento de água potável e não potável para diversas finalidades.",
+      description: "Abastecimento para diversas finalidades.",
       features: [
-        "Abastecimento de propriedades rurais",
-        "Fornecimento para obras e construções",
-        "Água de qualidade certificada",
-        "Entregas pontuais e programadas",
-        "Diferentes volumes disponíveis",
+        "Propriedades rurais",
+        "Obras e construções",
+        "Serviços pontuais e programadas",
         "Atendimento emergencial"
       ]
     },
     {
       icon: Sprout,
       title: "Caminhão de Esterco",
-      description: "Esterco curtido de alta qualidade para adubação orgânica eficiente.",
+      description: "Coleta e transporte de esterco direto da sua propriedade.",
       features: [
-        "Esterco curtido e pronto para uso",
-        "Ideal para lavouras e jardins",
-        "Melhora a fertilidade do solo",
-        "Quantidade personalizada",
-        "Entrega em propriedades rurais",
-        "Produto 100% orgânico"
+        "Coleta no local",
+        "Transporte seguro",
+        "Quantidade conforme necessidade",
+        "Atendimento em propriedades rurais"
       ]
     }
   ];
@@ -92,7 +88,7 @@ function ServicesSection() {
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        <SectionTitle subtitle="Dois serviços essenciais, um padrão de excelência">
+        <SectionTitle subtitle="Serviços essenciais, um padrão de excelência">
           Nossos Serviços
         </SectionTitle>
 
