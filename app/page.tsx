@@ -164,9 +164,9 @@ function ServicesSection() {
 
 function HistorySection() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="-mt-16 pb-8 md:py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-16 items-center">
           {/* Coluna da Esquerda - Imagem */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -175,7 +175,7 @@ function HistorySection() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative h-[500px]">
+            <div className="relative h-[300px] md:h-[500px]">
               <Image
                 src="/images/logo.png"
                 alt="Fort Fert - Nossa História"
